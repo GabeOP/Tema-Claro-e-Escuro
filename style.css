@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    padding: 100px;
+    background-color: whitesmoke;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "esquerda meio direita-t"
+        "esquerda meio direita-b"
+        "footer footer footer"
+    ;
+    gap: 8px;
+}
+.footer{
+    grid-area: footer;
+}
+.esquerda{
+    grid-area: esquerda;
+}
+.meio{
+    grid-area: meio;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+.direita-top{
+    grid-area: direita-t;
+}
+.direita-bottom{
+    grid-area: direita-b;
+}
+.item{
+    border-radius: 10px;
+    border: 10px solid gray;
+    background-color: rgb(172, 219, 244);
+    min-width: 100px;
+}
+.btn{
+    text-align: center;
+    margin-bottom: 8px;
+}
